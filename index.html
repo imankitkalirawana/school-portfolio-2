@@ -5,12 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="theme.css">
-
+    <title>Miracle Happens</title>
+    <link rel="icon" href="/images/favicon.ico">
 
     <!-- Fonts -->
     <link
@@ -27,36 +23,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://pro.Fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <link rel="stylesheet" href="/assets/owl.carousel.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/coswise/hicon-js@latest/hicon.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coswise/hicon-css@latest/web-fonts/hicon.min.css">
 
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="/assets/css/theme.css">
-
-
-    <!-- Local JS -->
-    <script src="/assets/js/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/typed.min.js"></script>
-    <script src="/assets/js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="nav_menu_m">
             <div class="nav_logo">Miracle<span class="logo_color">Happens</span></div>
             <div class="nav_menu">
                 <li class="nav_item active"><a href="#">Home</a></li>
-                <li class="nav_item"><a href="#">Courses</a></li>
-                <li class="nav_item"><a href="#">Mentors</a></li>
-                <li class="nav_item"><a href="#">Blog</a></li>
-                <li class="nav_item"><a href="#">Contact</a></li>
+                <li class="nav_item"><a href="#course">Courses</a></li>
+                <li class="nav_item"><a href="#services">Services</a></li>
+                <li class="nav_item"><a href="https://imankitkalirawana.online">Blog</a></li>
+                <li class="nav_item"><a href="#subscribe">Subscribe</a></li>
                 <div><a class="button_1" href="#">Login</a></div>
+            </div>
+            <button onclick="togglenav()" class="nav-toggle">
+                <i class="fa-regular fa-bars"></i>
+            </button>
+            <div class="nav_menu-m">
+                <a class="nav_item-m" href="#">Home</a>
+                <a class="nav_item-m" href="#">Courses</a>
+                <a class="nav_item-m" href="#">Mentors</a>
+                <a class="nav_item-m" href="#">Blog</a>
+                <a class="nav_item-m" href="#">Contact</a>
             </div>
         </nav>
     </header>
-
     <section class="banner" id="banner">
         <h2 class="banner_heading align_center">
             Let's learn about new knowledge and ablities.
@@ -106,44 +107,125 @@
         <div class="head_text-color align_center">How it works</div>
         <div class="head_text-main align_center">How is our tutoring services?</div>
         <div class="services_content">
-            <div class="services_content-1">
-                <div class="services_card services_card1">
-                    <div class="card_logo"><i class="h h-thumbs-up"></i></div>
-                    <h3 class="card_heading">Relaxing and Learning</h3>
-                    <p class="card_text">There are several sections available in different versions, but most Of them
-                        have
-                        fun</p>
-                    <a href="#" class="card_read-more">Read More</a>
+            <div class="services_card services_card1">
+                <div class="card_logo"><i class="h h-thumbs-up"></i></div>
+                <h3 class="card_heading">Relaxing and Learning</h3>
+                <p class="card_text">There are several sections available in different versions, but most Of them
+                    have
+                    fun</p>
+                <a href="#" class="card_read-more">Read More</a>
 
-                </div>
-                <div class="services_card services_card2">
-                    <div class="card_logo"><i class="h h-award"></i></div>
-                    <h3 class="card_heading">Certificate</h3>
-                    <p class="card_text">We are constantly improving the material for the lessons we want to pass on to
-                        Others.</p>
-                    <a href="#" class="card_read-more">Read More</a>
-
-                </div>
             </div>
-            <div class="services_content-2">
-                <div class="services_card services_card3">
-                    <div class="card_logo"><i class="h h-face-smile"></i></div>
-                    <h3 class="card_heading">Private Mentoring</h3>
-                    <p class="card_text">All of our specialists in special education have the best educational degrees.
-                    </p>
-                    <a href="#" class="card_read-more">Read More</a>
-                </div>
-                <div class="services_card services_card4">
-                    <div class="card_logo"><i class="h h-face-smile"></i></div>
-                    <h3 class="card_heading">Creative Thinking</h3>
-                    <p class="card_text">All of our specialists in special education have the best educational degrees.
-                    </p>
-                    <a href="#" class="card_read-more">Read More</a>
-                </div>
+            <div class="services_card services_card2">
+                <div class="card_logo"><i class="h h-award"></i></div>
+                <h3 class="card_heading">Certificate</h3>
+                <p class="card_text">We are constantly improving the material
+                    for the lessons we want to pass on to
+                    Others.</p>
+                <a href="#" class="card_read-more">Read More</a>
+
+            </div>
+            <div class="services_card services_card3">
+                <div class="card_logo"><i class="h h-face-smile"></i></div>
+                <h3 class="card_heading">Private Mentoring</h3>
+                <p class="card_text">All of our specialists in special
+                    education have the best educational degrees.
+                </p>
+                <a href="#" class="card_read-more">Read More</a>
+            </div>
+            <div class="services_card services_card4">
+                <div class="card_logo"><i class="h h-face-smile"></i></div>
+                <h3 class="card_heading">Creative Thinking</h3>
+                <p class="card_text">All of our specialists in special
+                    education have the best educational degrees.
+                </p>
+                <a href="#" class="card_read-more">Read More</a>
             </div>
         </div>
     </section>
+    <section class="course" id="course">
+        <h3 class="head_text-main align_center"><i>"</i> Choose the class according to your need</h3>
+        <div class="carousel">
+            <a href="" # class="course_card class_card-1">
+                <img src="images/creativity.jpg" alt="geography">
+                <h4 class="card_middle">The level of creativity and
+                    student activity</h4>
+                <div class="card_bottom">
+                    <div class="card_bottom_left">
+                        <i class="h h-users"></i>
+                        <p>2.5k Students</p>
+                        <span class="course_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9</p>
+                        </span>
+                    </div>
+                    <div class="card_bottom_right">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>9,995</p>
+                    </div>
+                </div>
+            </a>
 
+            <a href="" # class="course_card class_card-2">
+                <img src="images/geography.jpg" alt="geography">
+                <h4 class="card_middle">Knowledge of earth and
+                    world geography</h4>
+                <div class="card_bottom">
+                    <div class="card_bottom_left">
+                        <i class="h h-users"></i>
+                        <p>1.9k Students</p>
+                        <span class="course_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                        </span>
+                    </div>
+                    <div class="card_bottom_right">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>9,500</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" # class="course_card class_card-3">
+                <img src="images/mathematics.jpg" alt="geography">
+                <h4 class="card_middle">Logic and general numeric
+                    calculations</h4>
+                <div class="card_bottom">
+                    <div class="card_bottom_left">
+                        <i class="h h-users"></i>
+                        <p>3.5k Students</p>
+                        <span class="course_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.8</p>
+                        </span>
+                    </div>
+                    <div class="card_bottom_right">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>10,500</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" # class="course_card class_card-4">
+                <img src="images/painting.jpg" alt="geography">
+                <h4 class="card_middle">Drawing and coloring
+                    picture book</h4>
+                <div class="card_bottom">
+                    <div class="card_bottom_left">
+                        <i class="h h-users"></i>
+                        <p>1.4k Students</p>
+                        <span class="course_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.8</p>
+                        </span>
+                    </div>
+                    <div class="card_bottom_right">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <p>11,500</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="button_1">View More</a>
+    </section>
     <section class="methods max-width" id="methods">
         <img src="/images/graduation_girl.png" alt="graduation girl">
         <div class="methods_right">
@@ -161,98 +243,77 @@
             <a href="#" class="button_1">Get Started</a>
         </div>
     </section>
-
-    <section class="course" id="course">
-        <h3 class="head_text-main align_center"><i>"</i> Choose the class according to your need</h3>
-        <div class="carousel">
-            <div class="carousel-1">
-                <a href="" # class="course_card class_card-1">
-                    <img src="images/creativity.jpg" alt="geography">
-                    <h4 class="card_middle">The level of creativity and
-                        student activity</h4>
-                    <div class="card_bottom">
-                        <div class="card_bottom_left">
-                            <i class="h h-users"></i>
-                            <p>2.5k Students</p>
-                            <span class="course_rating">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.9</p>
-                            </span>
-                        </div>
-                        <div class="card_bottom_right">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <p>9,995</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" # class="course_card class_card-2">
-                    <img src="images/geography.jpg" alt="geography">
-                    <h4 class="card_middle">Knowledge of earth and
-                        world geography</h4>
-                    <div class="card_bottom">
-                        <div class="card_bottom_left">
-                            <i class="h h-users"></i>
-                            <p>1.9k Students</p>
-                            <span class="course_rating">
-                                <i class="fa-solid fa-star"></i>
-                                <p>5.0</p>
-                            </span>
-                        </div>
-                        <div class="card_bottom_right">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <p>9,500</p>
-                        </div>
-                    </div>
-                </a>
+    <footer id="subscribe">
+        <div class="footer-newsletter">
+            <div class="newsletter-text">
+                Subscribe Newsletter
             </div>
-            <div class="carousel-2">
-                <a href="" # class="course_card class_card-3">
-                    <img src="images/mathematics.jpg" alt="geography">
-                    <h4 class="card_middle">Logic and general numeric
-                        calculations</h4>
-                    <div class="card_bottom">
-                        <div class="card_bottom_left">
-                            <i class="h h-users"></i>
-                            <p>3.5k Students</p>
-                            <span class="course_rating">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.8</p>
-                            </span>
-                        </div>
-                        <div class="card_bottom_right">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <p>10,500</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" # class="course_card class_card-4">
-                    <img src="images/painting.jpg" alt="geography">
-                    <h4 class="card_middle">Drawing and coloring
-                        picture book</h4>
-                    <div class="card_bottom">
-                        <div class="card_bottom_left">
-                            <i class="h h-users"></i>
-                            <p>1.4k Students</p>
-                            <span class="course_rating">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.8</p>
-                            </span>
-                        </div>
-                        <div class="card_bottom_right">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <p>11,500</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="newsletter">
+                <i class="fa-light fa-envelope"></i>
+                <input type="text" placeholder="Enter your email">
+                <button class="subscribe">Subscribe</button>
             </div>
         </div>
-        <a href="#" class="button_1">View More</a>
-    </section>
+        <div class="footer-promo">
+            <div class="promo-logo">
+                <div class="img"></div>
+                <span class="promo-logo-text">Miracle <br> Happens</span>
+            </div>
+            <div class="promo-menu">
+                <h3 class="promo-header">Services</h3>
+                <a class="promo-link" href="#" class="promo_items">About Us</a>
+                <a class="promo-link" href="https://contact.imankitkalirawana.online" class="promo_items">Contact Us</a>
+                <a class="promo-link" href="#" class="promo_items">Features</a>
+                <a class="promo-link" href="https://imankitkalirawana.online" class="promo_items">Blog</a>
+            </div>
+            <div class="promo-menu promo-team">
+                <h3 class="promo-header">Team</h3>
+                <a class="promo_items member-btn-1"><span class="member-name">imankitkalirawana</span><i
+                        class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <div class="team-details team-details-1">
+                    <div class="team-img"><img src="/images/imankitkalirawana.jpg" alt="bhuneshvar"></div>
+                    <div class="member-details">
+                        <h3 class="member-name">Ankit Kalirawana</h3>
+                        <p class="member-mail">business.imankitkalirawana@gmail.com</p>
+                        <a href="#" class="member-web">Know more <i
+                                class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="promo-contact">
+                <h3 class="promo-header">Social</h3>
+                <div class="promo-items-social">
+                    <a href="mailto:business.imankitkalirawana@gmail.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/bhuneshvar" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/imankitkalirawana" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://dribbble.com/imankitkalirawana" target="_blank"><i
+                            class="fa-brands fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyright">
+            <div class="copyright-1">
+                <i class="fa-regular fa-copyright"></i>
+                <span class="copyright-year">2023</span>
+                <a href="https://imankitkalirawana.online">imankitkalirawana.online</a>
+            </div>
+            <div class="copyright-2">
+                All right reserved
+            </div>
+        </div>
+    </footer>
+    <script>
+        const nav_menu_m = document.getElementById("nav_menu_m")
 
-
-
+        function togglenav() {
+            nav_menu_m.classList.toggle("toggle")
+        }
+    </script>
     <script src="/script.js"></script>
 </body>
 
